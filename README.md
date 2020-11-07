@@ -3,3 +3,5 @@ SQL tutorial
 
 
 no nevim
+
+nejde mi to
