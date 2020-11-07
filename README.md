@@ -7,3 +7,5 @@ SQL tutorial
 no nevim
 
 nejde mi to
+
+ted snad
