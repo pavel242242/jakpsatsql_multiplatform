@@ -1,11 +1,24 @@
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/pavel242242/jakpsatsql_multiplatform)
-
 # jakpsatsql_multiplatform
-SQL tutorial
 
+## Project setup
+```
+npm install
+```
 
-no nevim
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-nejde mi to
+### Compiles and minifies for production
+```
+npm run build
+```
 
-ted snad
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
