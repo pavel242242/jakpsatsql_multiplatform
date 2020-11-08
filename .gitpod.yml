@@ -6,12 +6,18 @@ vscode:
 
 tasks:
   - init: >
-      touch /tmp/.npm-lock &&
+      touch /tmp/.npm-lock-npm &&
+      touch /tmp/.npm-lock-db &&
       npm install &&
-      npm install -g @vue/cli &&
-      npm install -g json-server &&
-      rm /tmp/.npm-lock
+      rm /tmp/.npm-lock-npm
     command:
       npm run serve
-  - init: sleep 1 && while [ -f /tmp/.npm-lock ]; do sleep 2; done
+  
+  - init: sleep 1 && while [ -f /tmp/.npm-lock-npm ]; do sleep 2; done
+    command: npm install -g @vue/cli &&
+  - init: sleep 1 && while [ -f /tmp/.npm-lock-npm ]; do sleep 2; done
+    command: >
+          npm install -g json-server &&
+          rm /tmp/.npm-lock-db
+  - init: sleep 1 && while [ -f /tmp/.npm-lock-db ]; do sleep 2; done
     command: json-server db.json
