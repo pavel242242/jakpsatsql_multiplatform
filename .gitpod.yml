@@ -22,10 +22,7 @@ tasks:
   - init: sleep 1 && while [ -f /tmp/.npm-lock-npm ]; do sleep 2; done
     command: >
           npm install -g json-server &&
-          rm /tmp/.npm-lock-db
-
-  - init: sleep 1 && while [ -f /tmp/.npm-lock-db ]; do sleep 2; done
-    command: json-server db.json
+          json-server db.json
 
 
 ports:
