@@ -24,7 +24,7 @@ tasks:
           npm install -g json-server &&
           json-server db.json
 
-  - command: gp await-port 3000 && gp preview $(gp url/todos 3000)
+  - command: gp await-port 3000 && gp preview $(gp url 3000)/todos
 
 ports:
   - port: 8080
